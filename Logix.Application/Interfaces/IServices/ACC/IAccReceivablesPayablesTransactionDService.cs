@@ -1,0 +1,10 @@
+﻿using Logix.Application.DTOs.ACC;
+using Logix.Domain.ACC;
+
+namespace Logix.Application.Interfaces.IServices.ACC
+{
+    public interface IAccReceivablesPayablesTransactionDService : IGenericQueryService<AccReceivablesPayablesTransactionDDto, AccReceivablesPayablesTransactionDVw>, IGenericWriteService<AccReceivablesPayablesTransactionDDto, AccReceivablesPayablesTransactionDEditDto>
+    {
+
+    }
+}

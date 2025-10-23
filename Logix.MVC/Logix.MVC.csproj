@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Autofac" Version="7.0.1" />
+		<PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+		<PackageReference Include="Dapper" Version="2.1.15" />
+		<PackageReference Include="DevExpress.AspNetCore.Reporting" Version="22.2.4" />
+		<PackageReference Include="DevExpress.DataAccess" Version="22.2.4" />
+		<PackageReference Include="DinkToPdf" Version="1.0.8" />
+		<PackageReference Include="EPPlus" Version="6.2.3" />
+		<PackageReference Include="HTMLToQPDF" Version="1.1.0" />
+		<PackageReference Include="itext7.bouncy-castle-adapter" Version="8.0.3" />
+		<PackageReference Include="LibWkHtmlToX-32" Version="0.12.6.1" />
+		<PackageReference Include="MailKit" Version="4.3.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Localization" Version="2.2.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.10">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.Localization" Version="7.0.7" />
+		<PackageReference Include="Microsoft.Graph" Version="5.67.0" />
+		<PackageReference Include="Microsoft.Identity.Web.UI" Version="3.5.0" />
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="NodaTime" Version="3.2.0" />
+		<PackageReference Include="Novell.Directory.Ldap.NETStandard" Version="3.6.0" />
+		<PackageReference Include="QuestPDF" Version="2023.12.6" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+		<PackageReference Include="System.DirectoryServices" Version="9.0.1" />
+		<PackageReference Include="System.Resources.ResourceManager" Version="4.3.0" />
+		<PackageReference Include="System.Security.Cryptography.Cng" Version="5.0.0" />
+		<PackageReference Include="TextToQRImage" Version="1.0.5" />
+		<PackageReference Include="YamlDotNet" Version="13.1.0" />
+		<PackageReference Include="ZXing.Net" Version="0.16.9" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="CustomReport\DevReport\FixedAssets\" />
+		<Folder Include="CustomReport\DevReport\Main\" />
+		<Folder Include="wwwroot\AllFiles\QRCode\Sales\" />
+		<Folder Include="wwwroot\Files\Emails\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\EInvoiceKSADemo.Helpers\EInvoiceKSADemo.Helpers.csproj" />
+		<ProjectReference Include="..\Logix.Application\Logix.Application.csproj" />
+		<ProjectReference Include="..\Logix.Domain\Logix.Domain.csproj" />
+		<ProjectReference Include="..\Logix.Infrastructure\Logix.Infrastructure.csproj" />
+	</ItemGroup>
+
+</Project>
